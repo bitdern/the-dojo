@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
-    <div>
+    <div className="navbar">
       <ul>
         <li className="logo">
           <img src={Temple} alt="dojo logo" />
