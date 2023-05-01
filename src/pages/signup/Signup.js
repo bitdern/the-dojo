@@ -4,14 +4,11 @@ import { useSignup } from "../../hooks/useSignup";
 // styles
 import "./Signup.css";
 
-import React from "react";
-import { devNull } from "os";
-
 export default function Signup() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [displayName, setDisplayName] = useState("");
-  const [thumbnail, setThumbnail] = useState(devNull);
+  const [thumbnail, setThumbnail] = useState(null);
   const [thumbnailError, setThumbnailError] = useState(null);
   const { signup, isPending, error } = useSignup();
 
